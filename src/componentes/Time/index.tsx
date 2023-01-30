@@ -1,7 +1,15 @@
+import { IColaborador } from '../../compartilhado/interfaces/IColaborador';
 import Colaborador from '../Colaborador';
 import './Time.css';
 
-const Time = (props) => {
+interface TimeProps {
+    nome: string;
+    corPrimaria: string;
+    corSecundaria: string;
+    colaboradores: IColaborador[];
+}
+
+const Time = (props: TimeProps) => {
 
     const css = {backgroundColor : props.corSecundaria}
 
